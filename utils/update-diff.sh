@@ -7,7 +7,7 @@ trap 'rm -rf "$workdir"' EXIT
 
 cd "$workdir"
 
-git clone --depth=1 --branch=v3.5.0 https://github.com/microsoft/mimalloc.git .
+git clone --depth=1 --branch=v3.5.1 https://github.com/microsoft/mimalloc.git .
 
 git apply "$OLDPWD/mimalloc.diff"
 
