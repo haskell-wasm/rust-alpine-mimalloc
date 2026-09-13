@@ -1,8 +1,8 @@
 diff --git a/CMakeLists.txt b/CMakeLists.txt
-index c47a3d0..def3847 100644
+index c894270..d016e58 100644
 --- a/CMakeLists.txt
 +++ b/CMakeLists.txt
-@@ -952,7 +952,6 @@ endif()
+@@ -1048,7 +1048,6 @@ endif()
  if (MI_BUILD_STATIC)
    add_library(mimalloc-static STATIC ${mi_sources})
    set_property(TARGET mimalloc-static PROPERTY OUTPUT_NAME ${mi_libname})
@@ -11,7 +11,7 @@ index c47a3d0..def3847 100644
    target_compile_options(mimalloc-static PRIVATE ${mi_cflags} ${mi_cflags_static})
    target_link_libraries(mimalloc-static PRIVATE ${mi_libraries})
 diff --git a/src/alloc-override.c b/src/alloc-override.c
-index 04da5f2..0b1cd1c 100644
+index bcb96b5..764309c 100644
 --- a/src/alloc-override.c
 +++ b/src/alloc-override.c
 @@ -271,7 +271,7 @@ typedef void* mi_nothrow_t;
