@@ -1,8 +1,8 @@
 diff --git a/CMakeLists.txt b/CMakeLists.txt
-index c894270..d016e58 100644
+index a4a260a..b465a32 100644
 --- a/CMakeLists.txt
 +++ b/CMakeLists.txt
-@@ -1048,7 +1048,6 @@ endif()
+@@ -1066,7 +1066,6 @@ endif()
  if (MI_BUILD_STATIC)
    add_library(mimalloc-static STATIC ${mi_sources})
    set_property(TARGET mimalloc-static PROPERTY OUTPUT_NAME ${mi_libname})
